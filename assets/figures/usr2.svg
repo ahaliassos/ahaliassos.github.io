@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="160" viewBox="0 0 440 160" role="img" aria-labelledby="title description">
+  <title id="title">USR 2.0: one model for audio, video or both</title>
+  <desc id="description">Audio, video and combined audiovisual inputs lead to one shared speech recognition model, which produces text.</desc>
+  <g fill="none" stroke="#636b71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 38h6l3-7 4 14 4-21 4 27 4-18 4 10 4-5h8"/>
+    <rect x="33" y="66" width="38" height="27" rx="2"/>
+    <path d="m47 73 11 6.5L47 86z"/>
+    <rect x="27" y="112" width="26" height="21" rx="2"/>
+    <path d="m36 118 8 4.5-8 4.5zM60 123h4l3-8 4 16 4-11 3 3h4"/>
+    <g stroke="#a0a7ab">
+      <path d="M184 38h15q15 0 15 15v27M184 80h45M184 123h15q15 0 15-15V80"/>
+    </g>
+    <rect x="234" y="53" width="104" height="54" rx="3"/>
+    <path d="M338 80h27"/>
+    <rect x="376" y="56" width="36" height="48" rx="2"/>
+    <path d="M384 68h20M384 78h20M384 88h13"/>
+  </g>
+  <g font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#253d59">
+    <text x="92" y="42">Audio</text>
+    <text x="92" y="84">Video</text>
+    <text x="92" y="127">Audio + video</text>
+    <text x="286" y="84" text-anchor="middle" letter-spacing=".7">ONE MODEL</text>
+    <text x="394" y="125" text-anchor="middle" fill="#666765">Text</text>
+  </g>
+  <circle cx="214" cy="80" r="3" fill="#35689b"/>
+  <path d="m358 74 7 6-7 6" fill="none" stroke="#35689b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

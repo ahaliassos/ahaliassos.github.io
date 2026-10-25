@@ -1,0 +1,131 @@
+[
+  {
+    "id": "usr2", "year": 2026, "venue": "ICLR", "shortName": "USR 2.0", "selected": 1,
+    "title": "Pay Attention to CTC: Fast and Robust Pseudo-Labelling for Unified Speech Recognition",
+    "authors": ["Alexandros Haliassos", "Rodrigo Mira", "Stavros Petridis"],
+    "summary": "Faster training and stronger robustness for a single model that recognises speech from audio, video, or both.",
+    "reviewNote": {
+      "text": "Second-highest mean reviewer score among ICLR 2026 papers listed by",
+      "sourceName": "Paper Copilot",
+      "source": "https://papercopilot.com/statistics/iclr-statistics/iclr-2026-statistics/"
+    },
+    "topics": ["speech", "representation"],
+    "paper": "https://arxiv.org/abs/2602.19316", "code": "https://github.com/ahaliassos/usr2",
+    "figure": {
+      "src": "assets/figures/usr2.svg", "width": 440, "height": 160,
+      "alt": "Audio, video or both feed a single speech recognition model that produces text.",
+      "source": "https://arxiv.org/html/2602.19316v1",
+      "originalSource": "https://github.com/ahaliassos/usr2/blob/e9e9c94e8d827efbb28e9a4b9d5d2d97a583b129/assets/overview_usr2.png"
+    },
+    "source": "https://openreview.net/pdf?id=sSbEEHNEsL"
+  },
+  {
+    "id": "lookahead", "year": 2027, "venue": "WACV", "shortName": "Lookahead Anchoring",
+    "title": "Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human Animation",
+    "authors": ["Junyoung Seo", "Rodrigo Mira", "Alexandros Haliassos", "Stella Bounareli", "Honglie Chen", "Linh Tran", "Seungryong Kim", "Zoe Landgraf", "Jie Shen"],
+    "summary": "Using future temporal anchors to preserve character identity during audio-driven video generation.",
+    "topics": ["generation"], "paper": "https://arxiv.org/abs/2510.23581",
+    "project": "https://lookahead-anchoring.github.io/", "source": "https://miraodasilva.github.io/publications/"
+  },
+  {
+    "id": "usr", "year": 2024, "venue": "NeurIPS", "shortName": "Unified Speech Recognition", "selected": 2,
+    "title": "Unified Speech Recognition: A Single Model for Auditory, Visual, and Audiovisual Inputs",
+    "authors": ["Alexandros Haliassos", "Rodrigo Mira", "Honglie Chen", "Zoe Landgraf", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Bringing auditory, visual and audiovisual speech recognition together in one semi-supervised model.",
+    "topics": ["speech", "representation"], "paper": "https://arxiv.org/abs/2411.02256", "code": "https://github.com/ahaliassos/usr",
+    "source": "https://arxiv.org/abs/2411.02256"
+  },
+  {
+    "id": "braven", "year": 2024, "venue": "ICASSP", "shortName": "BRAVEn",
+    "title": "BRAVEn: Improving Self-Supervised Pre-training for Visual and Auditory Speech Recognition",
+    "authors": ["Alexandros Haliassos", "Andreas Zinonos", "Rodrigo Mira", "Stavros Petridis", "Maja Pantic"],
+    "equalContribution": ["Alexandros Haliassos", "Andreas Zinonos"],
+    "summary": "Improving self-supervised speech representations by learning from unlabelled audio and video.",
+    "topics": ["speech", "representation"], "paper": "https://arxiv.org/abs/2404.02098", "code": "https://github.com/ahaliassos/raven",
+    "source": "https://arxiv.org/abs/2404.02098"
+  },
+  {
+    "id": "raven", "year": 2023, "venue": "ICLR", "shortName": "RAVEn", "selected": 3,
+    "title": "Jointly Learning Visual and Auditory Speech Representations from Raw Data",
+    "authors": ["Alexandros Haliassos", "Pingchuan Ma", "Rodrigo Mira", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Learning useful audio and visual representations directly from unlabelled talking-face videos.",
+    "topics": ["speech", "representation"], "paper": "https://arxiv.org/abs/2212.06246", "code": "https://github.com/ahaliassos/raven",
+    "source": "https://arxiv.org/abs/2212.06246"
+  },
+  {
+    "id": "autoavsr", "year": 2023, "venue": "ICASSP", "shortName": "Auto-AVSR",
+    "title": "Auto-AVSR: Audio-Visual Speech Recognition with Automatic Labels",
+    "authors": ["Pingchuan Ma", "Alexandros Haliassos", "Adriana Fernandez-Lopez", "Honglie Chen", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Scaling audiovisual speech recognition with automatically transcribed training data.",
+    "topics": ["speech"], "paper": "https://arxiv.org/abs/2303.14307", "code": "https://github.com/mpc001/auto_avsr", "source": "https://arxiv.org/abs/2303.14307"
+  },
+  {
+    "id": "crosslingual", "year": 2023, "venue": "ICASSP", "shortName": "Cross-lingual VSR",
+    "title": "Learning Cross-Lingual Visual Speech Representations",
+    "authors": ["Andreas Zinonos", "Alexandros Haliassos", "Pingchuan Ma", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Studying how unlabelled multilingual video supports visual speech recognition across languages.",
+    "topics": ["speech", "representation"], "paper": "https://arxiv.org/abs/2303.09455", "source": "https://arxiv.org/abs/2303.09455"
+  },
+  {
+    "id": "sparsevsr", "year": 2023, "venue": "Interspeech", "shortName": "SparseVSR",
+    "title": "SparseVSR: Lightweight and Noise Robust Visual Speech Recognition",
+    "authors": ["Adriana Fernandez-Lopez", "Honglie Chen", "Pingchuan Ma", "Alexandros Haliassos", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Pruning visual speech models for compact representations and improved resilience to visual noise.",
+    "topics": ["speech"], "paper": "https://www.isca-archive.org/interspeech_2023/fernandezlopez23_interspeech.html",
+    "source": "https://www.isca-archive.org/interspeech_2023/fernandezlopez23_interspeech.html"
+  },
+  {
+    "id": "realforensics", "year": 2022, "venue": "CVPR", "shortName": "RealForensics", "selected": 4,
+    "title": "Leveraging Real Talking Faces via Self-Supervision for Robust Forgery Detection",
+    "authors": ["Alexandros Haliassos", "Rodrigo Mira", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Learning the natural correspondence between face and voice to detect unfamiliar forgeries more robustly.",
+    "topics": ["deepfakes", "representation"], "paper": "https://arxiv.org/abs/2201.07131", "code": "https://github.com/ahaliassos/RealForensics",
+    "figure": {
+      "src": "assets/figures/realforensics.svg", "width": 440, "height": 160,
+      "alt": "Learning natural patterns from real talking faces to support face forgery detection.",
+      "source": "https://arxiv.org/html/2201.07131",
+      "originalSource": "https://github.com/ahaliassos/RealForensics/blob/a53e849407d2fd5be0f0a7eb3df7d1a846b5b803/overview.png"
+    },
+    "source": "https://openaccess.thecvf.com/content/CVPR2022/papers/Haliassos_Leveraging_Real_Talking_Faces_via_Self-Supervision_for_Robust_Forgery_Detection_CVPR_2022_paper.pdf"
+  },
+  {
+    "id": "svts", "year": 2022, "venue": "Interspeech", "shortName": "SVTS",
+    "title": "SVTS: Scalable Video-to-Speech Synthesis",
+    "authors": ["Rodrigo Mira", "Alexandros Haliassos", "Stavros Petridis", "Björn W. Schuller", "Maja Pantic"],
+    "summary": "Reconstructing intelligible speech from silent video of a speaker’s lip movements.",
+    "topics": ["speech", "generation"], "paper": "https://arxiv.org/abs/2205.02058", "project": "https://sites.google.com/view/scalable-vts",
+    "source": "https://miraodasilva.github.io/publications/svts"
+  },
+  {
+    "id": "cp", "year": 2022, "venue": "IEEE TNNLS", "shortName": "Tensor learning",
+    "title": "Supervised Learning for Nonsequential Data: A Canonical Polyadic Decomposition Approach",
+    "authors": ["Alexandros Haliassos", "Kriton Konstantinidis", "Danilo P. Mandic"],
+    "summary": "Compact tensor models for learning feature interactions without imposing an order on the input features.",
+    "topics": ["other"], "paper": "https://doi.org/10.1109/TNNLS.2021.3069399", "source": "https://pubmed.ncbi.nlm.nih.gov/33822727/"
+  },
+  {
+    "id": "lipforensics", "year": 2021, "venue": "CVPR", "shortName": "LipForensics", "selected": 5,
+    "title": "Lips Don’t Lie: A Generalisable and Robust Approach to Face Forgery Detection",
+    "authors": ["Alexandros Haliassos", "Konstantinos Vougioukas", "Stavros Petridis", "Maja Pantic"],
+    "summary": "Using what a model learns from lipreading to recognise manipulated faces, including unseen forgery types.",
+    "topics": ["deepfakes"], "paper": "https://arxiv.org/abs/2012.07657", "code": "https://github.com/ahaliassos/LipForensics",
+    "source": "https://openaccess.thecvf.com/content/CVPR2021/papers/Haliassos_Lips_Dont_Lie_A_Generalisable_and_Robust_Approach_To_Face_CVPR_2021_paper.pdf"
+  },
+  {
+    "id": "papyri", "year": 2020, "venue": "Book chapter", "shortName": "Visual cultural heritage",
+    "title": "Classification and Detection of Symbols in Ancient Papyri",
+    "authors": ["Alexandros Haliassos", "Panagiotis Barmpoutis", "Tania Stathaki", "Stephen Quirke", "Anthony Constantinides"],
+    "summary": "Applying computer vision to the detection and classification of symbols in ancient manuscripts.",
+    "topics": ["other"], "paper": "https://doi.org/10.1007/978-3-030-37191-3_7",
+    "source": "https://doi.org/10.1007/978-3-030-37191-3_7"
+  },
+  {
+    "id": "spectral", "year": 2019, "venue": "EAGE", "shortName": "Spectral equalization",
+    "title": "Spectral Equalization Using Local Frequencies",
+    "authors": ["C. Bagaini", "Alexandros Haliassos"],
+    "summary": "Using local frequency estimates to equalise the spectra of seismic datasets before registration.",
+    "topics": ["other"], "booktitle": "81st EAGE Conference and Exhibition 2019",
+    "paper": "https://doi.org/10.3997/2214-4609.201901197",
+    "source": "https://www.earthdoc.org/content/papers/10.3997/2214-4609.201901197"
+  }
+]

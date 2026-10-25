@@ -1,4 +1,8 @@
-_site/
-vendor/
-.bundle/
-Gemfile.lock
+.DS_Store
+node_modules/
+.artifacts/
+/dist/
+/CONTENT_NOTES.md
+/.openai/
+*.tar.gz
+*.log

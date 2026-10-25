@@ -1,0 +1,161 @@
+% Standalone LaTeX CV. Generated content comes from data/profile.json,
+% data/cv.json and data/publications.json. Compile with XeLaTeX or Tectonic.
+\documentclass[10pt,a4paper]{article}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\DeclareMathSizes{10.5}{10}{7}{5}
+\DeclareMathSizes{9.5}{9}{6}{5}
+
+\definecolor{navy}{HTML}{253D59}
+\definecolor{ink}{HTML}{30343A}
+\definecolor{muted}{HTML}{606770}
+\definecolor{rule}{HTML}{C4CCD4}
+\hypersetup{colorlinks=true,urlcolor=navy,linkcolor=navy,
+  pdfauthor={Alexandros Haliassos},pdftitle={Alexandros Haliassos — Curriculum Vitae},
+  pdfsubject={Research experience, education and selected publications},
+  pdfkeywords={deepfake detection, audiovisual learning, speech recognition},
+  pdfdisplaydoctitle=true,pdfborder={0 0 0}}
+
+% A4 with generous, symmetric margins. No layout packages are required.
+\setlength{\oddsidemargin}{\dimexpr19mm-1in\relax}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{172mm}
+\setlength{\topmargin}{\dimexpr17mm-1in\relax}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\textheight}{260mm}
+\setlength{\footskip}{10mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\raggedbottom
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\clubpenalty=10000
+\widowpenalty=10000
+\setlist[itemize]{leftmargin=11pt,label={\raisebox{0.15ex}{\tiny$\bullet$}},
+  topsep=3pt,itemsep=2pt,parsep=0pt,partopsep=0pt}
+
+\makeatletter
+\def\ps@cv{%
+  \def\@oddhead{}\def\@evenhead{}%
+  \def\@oddfoot{\color{muted}\fontsize{8}{10}\selectfont
+    Alexandros Haliassos\hfill Updated October 2026\quad|\quad\thepage\,/\,2}%
+  \let\@evenfoot\@oddfoot}
+\makeatother
+\pagestyle{cv}
+
+\newcommand{\cvsection}[1]{%
+  \par\addvspace{14pt}%
+  {\color{navy}\fontsize{10.5}{13}\selectfont\bfseries\MakeUppercase{#1}\par}%
+  \nobreak\vspace{3pt}{\color{rule}\hrule height 0.45pt}%
+  \nobreak\vspace{8pt}}
+\newcommand{\organisation}[1]{%
+  {\fontsize{12}{15}\selectfont\bfseries #1\par}\nobreak\vspace{3pt}}
+\newcommand{\dated}[2]{%
+  {\bfseries #1}\hfill{\fontsize{9.5}{12}\selectfont\color{muted}#2}\par\nobreak}
+\newcommand{\appointment}[2]{\dated{#1}{#2}}
+\newcommand{\entrygap}{\par\vspace{7pt}}
+\newcommand{\paper}[4]{%
+  \begin{minipage}{\linewidth}
+    {\fontsize{11.5}{14}\selectfont\bfseries\href{#1}{#2}\par}\vspace{3pt}
+    {\fontsize{10}{12.5}\selectfont #3\par}\vspace{2pt}
+    {\fontsize{9.5}{12}\selectfont\bfseries\color{navy}#4\par}
+  \end{minipage}\par\vspace{12pt}}
+
+\begin{document}
+\color{ink}\fontsize{10.5}{13.5}\selectfont
+{\color{navy}\fontsize{27}{31}\selectfont\bfseries Alexandros Haliassos\par}
+\vspace{5pt}
+{\fontsize{11}{14}\selectfont AI Research Engineer/Scientist\quad|\quad NatWest Group, CAIRO\par}
+\vspace{6pt}
+{\fontsize{9.5}{12}\selectfont London, UK\quad|\quad\href{mailto:ahaliassos@gmail.com}{ahaliassos@gmail.com}\quad|\quad\href{https://ahaliassos.github.io}{ahaliassos.github.io}\par}
+\vspace{3pt}
+{\fontsize{9.5}{12}\selectfont \href{https://scholar.google.com/citations?user=qejRKDYAAAAJ\&hl=en}{Google Scholar}\quad|\quad\href{https://github.com/ahaliassos}{GitHub}\quad|\quad\href{https://www.linkedin.com/in/alexandros-haliassos-692495150/}{LinkedIn}\par}
+
+\cvsection{Research interests}
+Deepfake detection, audiovisual representation learning, speech recognition, self- and semi-supervised learning, and robustness.\par
+\cvsection{Research experience}
+\organisation{NatWest Group | CAIRO}
+
+\appointment{AI Research Engineer/Scientist}{Oct 2025--present}
+\begin{itemize}
+  \item Serve as the primary model designer for speaker verification, audio deepfake detection in telephony, and audiovisual deepfake detection.
+  \item Design and apply self-supervised learning methods and develop personalised deepfake detection methods.
+  \item Investigate model robustness to unseen generators, telephony distortions, noise and dataset shifts, and contribute to training data generation.
+  \item Deliver internal talks explaining the group's models and research to colleagues across the bank.
+\end{itemize}
+\entrygap
+\organisation{Meta}
+
+\appointment{Postdoctoral Researcher}{May 2024--Oct 2025}
+\begin{itemize}
+  \item Developed a unified model for audio, visual and audiovisual speech recognition; first-author paper at ICLR 2026.
+  \item Introduced an efficient pseudo-labelling method that approximately halved training time versus the previous model (NeurIPS 2024) and improved robustness to longer utterances, noise and unseen domains.
+\end{itemize}
+\vspace{4pt}
+\appointment{Research Scientist Intern}{Jan--Apr 2022; May--Oct 2023}
+\begin{itemize}
+  \item Developed large-scale semi-supervised models for auditory and visual speech representations, leading to first-author publications at ICLR and NeurIPS.
+\end{itemize}
+\vspace{4pt}
+\appointment{External Research Collaborator}{Sep--Dec 2022}
+\begin{itemize}
+  \item Developed a scalable self-supervised model for joint speech and facial representation learning.
+\end{itemize}
+\entrygap
+\cvsection{Education}
+\dated{PhD in Machine Learning}{Jan 2020--Apr 2024}
+Imperial College London\par
+\begin{itemize}
+  \item Supervisor: Prof. Maja Pantic. Funded by an Imperial President's PhD Scholarship.
+\end{itemize}
+\textbf{Thesis:} Learning from Talking Faces: From DeepFake Detection to Speech Recognition.\par
+\vspace{2pt}
+Developed deepfake detection methods that generalise to unseen forgery types and remain robust to video corruptions.\par
+\entrygap
+\dated{MEng in Electrical and Electronic Engineering}{Oct 2014--Jun 2019}
+Imperial College London\par
+\begin{itemize}
+  \item First Class Honours (83\%); ranked second overall in the cohort.
+  \item Ranked first in the third year (86\%) and final year (89\%); First Class results in every year.
+\end{itemize}
+
+\entrygap
+
+\newpage
+{\fontsize{10}{13}\selectfont\color{muted}Alexandros Haliassos\hfill Curriculum vitae\par}
+\cvsection{Selected first-author publications}
+\paper{https://arxiv.org/abs/2602.19316}{Pay Attention to CTC: Fast and Robust Pseudo-Labelling for Unified Speech Recognition}{\textbf{Alexandros Haliassos}, Rodrigo Mira, Stavros Petridis}{ICLR 2026}
+\paper{https://arxiv.org/abs/2411.02256}{Unified Speech Recognition: A Single Model for Auditory, Visual, and Audiovisual Inputs}{\textbf{Alexandros Haliassos}, Rodrigo Mira, Honglie Chen, Zoe Landgraf, Stavros Petridis, Maja Pantic}{NeurIPS 2024}
+\paper{https://arxiv.org/abs/2404.02098}{BRAVEn: Improving Self-Supervised Pre-training for Visual and Auditory Speech Recognition}{\textbf{Alexandros Haliassos}\textsuperscript{*}, Andreas Zinonos\textsuperscript{*}, Rodrigo Mira, Stavros Petridis, Maja Pantic}{ICASSP 2024}
+\paper{https://arxiv.org/abs/2212.06246}{Jointly Learning Visual and Auditory Speech Representations from Raw Data}{\textbf{Alexandros Haliassos}, Pingchuan Ma, Rodrigo Mira, Stavros Petridis, Maja Pantic}{ICLR 2023}
+\paper{https://arxiv.org/abs/2201.07131}{Leveraging Real Talking Faces via Self-Supervision for Robust Forgery Detection}{\textbf{Alexandros Haliassos}, Rodrigo Mira, Stavros Petridis, Maja Pantic}{CVPR 2022}
+\paper{https://arxiv.org/abs/2012.07657}{Lips Don't Lie: A Generalisable and Robust Approach to Face Forgery Detection}{\textbf{Alexandros Haliassos}, Konstantinos Vougioukas, Stavros Petridis, Maja Pantic}{CVPR 2021}
+{\fontsize{9}{11}\selectfont * Equal contribution.\par}\vspace{4pt}
+{\fontsize{9.5}{12}\selectfont Complete publication list: \href{https://ahaliassos.github.io/publications.html}{ahaliassos.github.io/publications.html}\par}
+\cvsection{Awards and honours}
+\begin{itemize}
+  \item CVPR Outstanding Reviewer: 2022, 2024, 2026.
+  \item Imperial President's PhD Scholarship.
+  \item Henry Ford II Scholar Award for best academic record in final first-degree examinations, 2019.
+  \item Second place, Citadel European Data Open, 2019.
+  \item Dean's List (top 10\% of cohort): 2015, 2018, 2019.
+  \item Maurice Hancock Scholarship for excellence in the International Baccalaureate, 2014.
+\end{itemize}
+\cvsection{Reviewing service}
+Reviewer for \textbf{NeurIPS} (2024--2026), \textbf{CVPR} (2022--2026), \textbf{ICLR} (2026--2027), \textbf{ECCV} (2022, 2024, 2026), \textbf{ICCV} (2023), \textbf{WACV} (2027), \textbf{ICASSP} (2023), and \textbf{IJCV}.\par
+\cvsection{Earlier experience}
+\dated{Schlumberger --- Research Placement}{Apr--Nov 2018}
+Designed and evaluated image-processing algorithms for 3D seismic data alignment using MATLAB and C\#.\par
+\entrygap
+\dated{DekaBank --- Risk Management Intern}{Jul--Sep 2016}
+Supported the assessment of default probabilities for derivative counterparties.\par
+\entrygap
+\cvsection{Languages}
+English and Greek: fluent. German: C1 (Goethe).
+\end{document}

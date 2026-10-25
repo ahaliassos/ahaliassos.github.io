@@ -1,0 +1,85 @@
+% Standalone LaTeX CV. Generated content comes from data/profile.json,
+% data/cv.json and data/publications.json. Compile with XeLaTeX or Tectonic.
+\documentclass[10pt,a4paper]{article}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\DeclareMathSizes{10.5}{10}{7}{5}
+\DeclareMathSizes{9.5}{9}{6}{5}
+
+\definecolor{navy}{HTML}{253D59}
+\definecolor{ink}{HTML}{30343A}
+\definecolor{muted}{HTML}{606770}
+\definecolor{rule}{HTML}{C4CCD4}
+\hypersetup{colorlinks=true,urlcolor=navy,linkcolor=navy,
+  pdfauthor={@@NAME@@},pdftitle={@@NAME@@ — Curriculum Vitae},
+  pdfsubject={Research experience, education and selected publications},
+  pdfkeywords={deepfake detection, audiovisual learning, speech recognition},
+  pdfdisplaydoctitle=true,pdfborder={0 0 0}}
+
+% A4 with generous, symmetric margins. No layout packages are required.
+\setlength{\oddsidemargin}{\dimexpr19mm-1in\relax}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{172mm}
+\setlength{\topmargin}{\dimexpr17mm-1in\relax}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\textheight}{260mm}
+\setlength{\footskip}{10mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\raggedbottom
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\clubpenalty=10000
+\widowpenalty=10000
+\setlist[itemize]{leftmargin=11pt,label={\raisebox{0.15ex}{\tiny$\bullet$}},
+  topsep=3pt,itemsep=2pt,parsep=0pt,partopsep=0pt}
+
+\makeatletter
+\def\ps@cv{%
+  \def\@oddhead{}\def\@evenhead{}%
+  \def\@oddfoot{\color{muted}\fontsize{8}{10}\selectfont
+    @@NAME@@\hfill Updated @@UPDATED@@\quad|\quad\thepage\,/\,2}%
+  \let\@evenfoot\@oddfoot}
+\makeatother
+\pagestyle{cv}
+
+\newcommand{\cvsection}[1]{%
+  \par\addvspace{14pt}%
+  {\color{navy}\fontsize{10.5}{13}\selectfont\bfseries\MakeUppercase{#1}\par}%
+  \nobreak\vspace{3pt}{\color{rule}\hrule height 0.45pt}%
+  \nobreak\vspace{8pt}}
+\newcommand{\organisation}[1]{%
+  {\fontsize{12}{15}\selectfont\bfseries #1\par}\nobreak\vspace{3pt}}
+\newcommand{\dated}[2]{%
+  {\bfseries #1}\hfill{\fontsize{9.5}{12}\selectfont\color{muted}#2}\par\nobreak}
+\newcommand{\appointment}[2]{\dated{#1}{#2}}
+\newcommand{\entrygap}{\par\vspace{7pt}}
+\newcommand{\paper}[4]{%
+  \begin{minipage}{\linewidth}
+    {\fontsize{11.5}{14}\selectfont\bfseries\href{#1}{#2}\par}\vspace{3pt}
+    {\fontsize{10}{12.5}\selectfont #3\par}\vspace{2pt}
+    {\fontsize{9.5}{12}\selectfont\bfseries\color{navy}#4\par}
+  \end{minipage}\par\vspace{12pt}}
+
+\begin{document}
+\color{ink}\fontsize{10.5}{13.5}\selectfont
+{\color{navy}\fontsize{27}{31}\selectfont\bfseries @@NAME@@\par}
+\vspace{5pt}
+{\fontsize{11}{14}\selectfont @@ROLE@@\quad|\quad NatWest Group, CAIRO\par}
+\vspace{6pt}
+{\fontsize{9.5}{12}\selectfont @@CONTACT@@\par}
+\vspace{3pt}
+{\fontsize{9.5}{12}\selectfont @@LINKS@@\par}
+
+@@PAGE_ONE@@
+
+\newpage
+{\fontsize{10}{13}\selectfont\color{muted}@@NAME@@\hfill Curriculum vitae\par}
+@@PAGE_TWO@@
+\end{document}

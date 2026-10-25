@@ -1,0 +1,46 @@
+{
+  "name": "Alexandros Haliassos",
+  "portrait": {
+    "src": "assets/alexandros-haliassos.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "role": "AI Research Engineer/Scientist",
+  "affiliation": "NatWest Group · CAIRO",
+  "employment": {
+    "natwest": { "start": "October 2025" },
+    "metaPostdoc": { "start": "May 2024", "end": "October 2025" }
+  },
+  "educationHighlights": {
+    "meng": [
+      "First Class Honours (83%); ranked second overall in the cohort.",
+      "Ranked first in the third year (86%) and final year (89%); First Class results in every year."
+    ]
+  },
+  "honours": [
+    "CVPR Outstanding Reviewer: 2022, 2024, 2026.",
+    "Imperial President’s PhD Scholarship.",
+    "Henry Ford II Scholar Award for best academic record in final first-degree examinations, 2019.",
+    "Second place, Citadel European Data Open, 2019.",
+    "Dean’s List (top 10% of cohort): 2015, 2018, 2019.",
+    "Maurice Hancock Scholarship for excellence in the International Baccalaureate, 2014."
+  ],
+  "location": "London, UK",
+  "email": "ahaliassos@gmail.com",
+  "scholar": "https://scholar.google.com/citations?user=qejRKDYAAAAJ&hl=en",
+  "github": "https://github.com/ahaliassos",
+  "linkedin": "https://www.linkedin.com/in/alexandros-haliassos-692495150/",
+  "reviewing": [
+    { "venue": "NeurIPS", "years": "2024–2026" },
+    { "venue": "CVPR", "years": "2022–2026" },
+    { "venue": "ICLR", "years": "2026–2027" },
+    { "venue": "ECCV", "years": "2022, 2024, 2026" },
+    { "venue": "ICCV", "years": "2023" },
+    { "venue": "WACV", "years": "2027" },
+    { "venue": "ICASSP", "years": "2023" },
+    { "venue": "IJCV" }
+  ],
+  "description": "Alexandros Haliassos is an AI researcher at NatWest Group working on deepfake detection, audiovisual representation learning and robust machine learning. Previously Meta; PhD, Imperial College London.",
+  "canonicalUrl": "https://ahaliassos.github.io",
+  "updated": "2026-10-25"
+}

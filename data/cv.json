@@ -1,0 +1,77 @@
+{
+  "researchInterests": "Deepfake detection, audiovisual representation learning, speech recognition, self- and semi-supervised learning, and robustness.",
+  "experience": [
+    {
+      "organisation": "NatWest Group · CAIRO",
+      "appointments": [
+        {
+          "currentRole": true,
+          "period": "natwest",
+          "details": [
+            "Serve as the primary model designer for speaker verification, audio deepfake detection in telephony, and audiovisual deepfake detection.",
+            "Design and apply self-supervised learning methods and develop personalised deepfake detection methods.",
+            "Investigate model robustness to unseen generators, telephony distortions, noise and dataset shifts, and contribute to training data generation.",
+            "Deliver internal talks explaining the group’s models and research to colleagues across the bank."
+          ]
+        }
+      ]
+    },
+    {
+      "organisation": "Meta",
+      "appointments": [
+        {
+          "title": "Postdoctoral Researcher",
+          "period": "metaPostdoc",
+          "details": [
+            "Developed a unified model for audio, visual and audiovisual speech recognition; first-author paper at ICLR 2026.",
+            "Introduced an efficient pseudo-labelling method that approximately halved training time versus the previous model (NeurIPS 2024) and improved robustness to longer utterances, noise and unseen domains."
+          ]
+        },
+        {
+          "title": "Research Scientist Intern",
+          "dates": "January–April 2022; May–October 2023",
+          "details": [
+            "Developed large-scale semi-supervised models for auditory and visual speech representations, leading to first-author publications at ICLR and NeurIPS."
+          ]
+        },
+        {
+          "title": "External Research Collaborator",
+          "dates": "September–December 2022",
+          "details": ["Developed a scalable self-supervised model for joint speech and facial representation learning."]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD in Machine Learning",
+      "institution": "Imperial College London",
+      "dates": "January 2020–April 2024",
+      "details": ["Supervisor: Prof. Maja Pantic. Funded by an Imperial President’s PhD Scholarship."],
+      "thesis": "Learning from Talking Faces: From DeepFake Detection to Speech Recognition",
+      "research": "Developed deepfake detection methods that generalise to unseen forgery types and remain robust to video corruptions."
+    },
+    {
+      "degree": "MEng in Electrical and Electronic Engineering",
+      "institution": "Imperial College London",
+      "dates": "October 2014–June 2019",
+      "highlights": "meng"
+    }
+  ],
+  "selectedPublications": ["usr2", "usr", "braven", "raven", "realforensics", "lipforensics"],
+  "earlierExperience": [
+    {
+      "organisation": "Schlumberger",
+      "role": "Research Placement",
+      "dates": "April–November 2018",
+      "detail": "Designed and evaluated image-processing algorithms for 3D seismic data alignment using MATLAB and C#."
+    },
+    {
+      "organisation": "DekaBank",
+      "role": "Risk Management Intern",
+      "dates": "July–September 2016",
+      "detail": "Supported the assessment of default probabilities for derivative counterparties."
+    }
+  ],
+  "languages": "English and Greek: fluent. German: C1 (Goethe)."
+}
