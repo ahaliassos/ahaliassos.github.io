@@ -72,10 +72,9 @@ class Element {
 }
 const articles=[...pubHTML.matchAll(/<article class="paper-row publication" id="([^"]+)" data-topics="([^"]+)" data-search="([^"]+)"/g)].map(m=>{const e=new Element({topics:m[2],search:decode(m[3])});e.id=m[1];return e;});
 const filters=['all','deepfakes','representation','speech','generation','other'].map(filter=>new Element({filter}));
-const controls=new Element(),search=new Element(),count=new Element(),empty=new Element(),reset=new Element(),print=new Element();
-const selectors={'.publication-controls':controls,'#publication-search':search,'.result-count':count,'.empty-state':empty,'#reset-search':reset,'.print-cv':print};
-let printed=false;
-const context={document:{querySelector:s=>selectors[s],querySelectorAll:s=>s==='.publication'?articles:s==='[data-filter]'?filters:[]},navigator:{},window:{addEventListener(){},print(){printed=true;}},setTimeout};
+const controls=new Element(),search=new Element(),count=new Element(),empty=new Element(),reset=new Element();
+const selectors={'.publication-controls':controls,'#publication-search':search,'.result-count':count,'.empty-state':empty,'#reset-search':reset};
+const context={document:{querySelector:s=>selectors[s],querySelectorAll:s=>s==='.publication'?articles:s==='[data-filter]'?filters:[]},navigator:{},window:{addEventListener(){}},setTimeout};
 vm.runInNewContext(await readFile(path.join(root,'assets/site.js'),'utf8'),context);
 assert.equal(articles.filter(a=>!a.hidden).length,papers.length);
 filters[1].fire('click');assert.deepEqual(articles.filter(a=>!a.hidden).map(a=>a.id),['realforensics','lipforensics']);
@@ -87,6 +86,5 @@ search.value='Bjorn';search.fire('input');assert.deepEqual(articles.filter(a=>!a
 search.value='  ';search.fire('input');assert.equal(count.textContent,`${papers.length} publications`);
 filters.at(-1).fire('click');search.value='EAGE';search.fire('input');
 assert.deepEqual(articles.filter(a=>!a.hidden).map(a=>a.id),['spectral']);
-print.fire('click');assert(printed);
-console.log(`Passed: ${papers.length} publication records, 4 pages, ${checkedLinks} local links and anchors (including nested 404 URLs), protected BibTeX names, structured metadata, 1200×630 social image, 2-page PDF, topic/search/reset/print interactions.`);
+console.log(`Passed: ${papers.length} publication records, 4 pages, ${checkedLinks} local links and anchors (including nested 404 URLs), protected BibTeX names, structured metadata, 1200×630 social image, 2-page PDF, topic/search/reset interactions.`);
 console.log('These are file and script checks. Browser layout and external URL availability require separate verification.');

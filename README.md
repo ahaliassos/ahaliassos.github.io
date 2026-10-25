@@ -2,7 +2,7 @@
 
 A small, static research website. The design and implementation are new; the earlier website's layout was not used.
 
-The homepage introduces Alexandros's current research and five selected papers. The publications page contains 13 papers and one book chapter, topic filters, search, BibTeX citations and a bibliography download. An industry research CV is available as accessible HTML and a two-page PDF, with six selected first-author papers.
+The homepage introduces Alexandros's current research and five selected papers. The publications page contains 13 papers and one book chapter, topic filters, search, BibTeX citations and a bibliography download. An industry research CV is available as accessible HTML and a two-page PDF, with six selected first-author papers. Use the PDF for sharing and printing.
 
 ## Open locally
 
@@ -34,7 +34,7 @@ npm run check
 | `assets/figures/` | Compact conceptual SVG illustrations for the two featured papers |
 | `scripts/build.mjs` | HTML templates, biography, background and CV content |
 | `assets/style.css` | Colours, typography, layouts, responsive and print rules |
-| `assets/site.js` | Search, topic filters, citation copying and printing |
+| `assets/site.js` | Search, topic filters and citation copying |
 | `cv/template.tex` | PDF typography and page layout |
 | `scripts/cv-source.mjs` | Shared CV helpers, LaTeX generation and PDF freshness validation |
 | `scripts/build-cv.mjs` | Typeset and validate the two-page PDF |
@@ -79,7 +79,7 @@ Editorial notes, local QA artifacts, local hosting metadata and generated `dist/
 
 ## Checks
 
-`npm run check` verifies publication records, unique page IDs, local links and fragments (including nested missing URLs), protected BibTeX names and matching inline/downloaded citations, metadata, all generated documents, image dimensions, search/topic combinations, empty results, reset behaviour and the print control. Content is present in HTML without JavaScript. Filters and clipboard controls progressively enhance it.
+`npm run check` verifies publication records, unique page IDs, local links and fragments (including nested missing URLs), protected BibTeX names and matching inline/downloaded citations, metadata, all generated documents, image dimensions, search/topic combinations, empty results and reset behaviour. Content is present in HTML without JavaScript. Filters and clipboard controls progressively enhance it.
 
 The October 2026 improvements were also checked in an isolated build with a subdirectory `SITE_URL`. A cached Tectonic/BibTeX run confirmed that CTC, BRAVEn, Auto-AVSR, SparseVSR and SVTS retain their capitalisation under title-case conversion.
 

@@ -47,6 +47,4 @@
       }
     });
   }
-  const print = document.querySelector('.print-cv');
-  if (print) { print.hidden = false; print.addEventListener('click', () => window.print()); }
 })();
