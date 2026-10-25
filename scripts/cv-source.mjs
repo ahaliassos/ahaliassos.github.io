@@ -73,7 +73,7 @@ export function renderCV(profile, papers, cv, template) {
 
   const updated = new Date(`${profile.updated}T12:00:00Z`).toLocaleDateString('en-GB',{month:'long',year:'numeric',timeZone:'UTC'});
   const replacements = {
-    NAME:tex(profile.name), ROLE:tex(profile.role), UPDATED:tex(updated),
+    NAME:tex(profile.name), ROLE:tex(profile.role), AFFILIATION:tex(profile.affiliation), UPDATED:tex(updated),
     CONTACT:`${tex(profile.location)}\\quad|\\quad${link(`mailto:${profile.email}`,profile.email)}\\quad|\\quad${link(profile.canonicalUrl,new URL(profile.canonicalUrl).host)}`,
     LINKS:[link(profile.scholar,'Google Scholar'),link(profile.github,'GitHub'),link(profile.linkedin,'LinkedIn')].join('\\quad|\\quad'),
     PAGE_ONE:pageOne, PAGE_TWO:pageTwo
