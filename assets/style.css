@@ -92,6 +92,7 @@ h1,h2,h3{color:var(--ink)}
 .background-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px;padding-block:96px 59px;border-top:1px solid var(--line);margin-top:49px}
 .background-intro h2{margin-bottom:24px}
 .background-intro .eyebrow{margin-bottom:10px}
+.background-intro .text-link span{margin-left:6px}
 .background-intro>p:not(.eyebrow){max-width:280px;font-size:14px;line-height:1.9;margin-bottom:24px;color:var(--muted)}
 .timeline{border-left:1px solid var(--line);padding-left:30px}
 .timeline article{position:relative;margin-bottom:33px}
