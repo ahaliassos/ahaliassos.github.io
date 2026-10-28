@@ -10,7 +10,7 @@
           "details": [
             "Design model architectures and training methods for speaker verification, audio deepfake detection in telephony, and audiovisual deepfake detection.",
             "Design and apply self-supervised learning methods and develop personalised deepfake detection methods.",
-            "Investigate model robustness to unseen generators, telephony distortions, noise and dataset shifts, and contribute to training data generation.",
+            "Develop methods to improve model robustness to unseen generators, telephony distortions, noise and dataset shifts.",
             "Deliver internal talks explaining the group’s models and research to colleagues across the bank."
           ]
         }
